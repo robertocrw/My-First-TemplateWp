@@ -13,6 +13,61 @@
 <?php wp_head();?>	 
 </head>
 <body>
+<div id="header">
+     
+	 <div id="header-superior">
+	     
+		 <div id="header-superior-content">
+		     
+			 <div id="header-paginas">
+			     
+				 header paginas
+			 
+			 </div><!--fim do header pagina-->
+			 
+			 <div id="header-social">
+			     
+				 header social
+			 
+			 </div><!--fim do header social-->
+		 
+		 </div><!--fim do header sup contente-->
+	 
+	 </div><!--fim do header superior-->
+
+<div id="header-content">
+     
+	 <div id="logo">
+	    
+		logo
+	 
+	 </div><!--fim logo-->
+	 
+	 <div id="login">
+	  
+	    login
+	 
+	 </div><!--fim login-->
+	 
+	 <div id="search">
+	     
+		 Barra de Busca
+	 
+	 </div><!--fim search-->
+
+</div><!--fim do header contente-->
+
+<div id="nav">
+     
+	 <div id="nav-content">
+	     
+		 Barra de navegação
+	 
+	 </div><!--fim do nav-content-->
+
+</div><!--fim nav--> 
+
+</div><!--fim do hearder-->
 
 <?php wp_footer();?>
 </body>

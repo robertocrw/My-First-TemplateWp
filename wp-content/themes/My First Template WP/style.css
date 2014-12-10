@@ -4,6 +4,13 @@
   Author: Roberto Washington
   Version: 1.0
 */
+*{
+     margin: 0;
+     padding: 0;
+}
 body {
-     background: #069;
+     background: #fff;
+	 font: 14px arial, tahoma, verdana;
+	 text-align: center;
+	 
 }
