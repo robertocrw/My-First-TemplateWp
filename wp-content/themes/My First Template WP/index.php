@@ -116,8 +116,57 @@
 		 </div><!--fim do games-->
 	 
 	 </div><!--fim do content-->
+<div id="sidebar">
+     <div id="sidebar-vistos">
+	     sidebar vistos
+	 </div><!--fim da sidebar vistos-->
+	 <div id="sidebar-colunistas">
+	     sidebar colunistas
+	 </div><!--fim da sidebar colunistas-->
+	 <div id="sidebar-publi">
+	     sidebar publicidades
+	 </div><!--fim da sidebar publi-->
+	 <div id="sidebar-coment">
+	     mais comentados
+	 </div><!--fim da sidebar coment-->
+	 <div id="sidebar-facebook">
+	     sidebar facebook
+	 </div><!--fim da sidebar facebook-->
+</div><!--fim sidebar-->	 
 
 </div><!--fim do container-->
+
+<div id="footer">
+     
+	 <div id="footer-content">
+	     
+		 <div id="footer-sobre">
+		     
+			 Sobre Nos
+		 
+		 </div><!--fim footer sobre-->
+		 
+		 <div id="footer-paginas">
+		     
+			 Paginas
+		 
+		 </div><!--fim footer paginas-->
+		 
+		 <div id="footer-recentes">
+		    
+			posts recentes
+		 
+		 </div><!--fim footer recentes-->
+	 
+	 </div><!--fim footer content -->
+	 
+	 <div id="footer-info">
+	     
+		 footer info
+	 
+	 </div><!--fim footer info-->
+
+</div><!--fim footer-->
 
 <?php wp_footer();?>
 </body>
