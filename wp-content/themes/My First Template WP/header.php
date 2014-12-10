@@ -21,13 +21,22 @@
 		     
 			 <div id="header-paginas">
 			     
-				 header paginas
+				 <ul>
+				     <li><a href="#">Home</a></li>
+					 <li><a href="#">Arquivos</a></li>
+					 <li><a href="#">Sobre Nós</a></li>
+					 <li><a href="#">Serviços</a></li>
+					 <li><a href="#">Contatos</a></li>
+				 </ul>
 			 
 			 </div><!--fim do header pagina-->
 			 
 			 <div id="header-social">
 			     
-				 header social
+				 <a href=""><img src="<?php bloginfo('template_url'); ?>/imagens/icon-face.jpg" rel="" title="" /></a>
+				 <a href=""><img src="<?php bloginfo('template_url'); ?>/imagens/icon-google.jpg" rel="" title="" /></a>
+				 <a href=""><img src="<?php bloginfo('template_url'); ?>/imagens/icon-twist.jpg" rel="" title="" /></a>
+				 <a href=""><img src="<?php bloginfo('template_url'); ?>/imagens/icon-youtube.jpg" rel="" title="" /></a>
 			 
 			 </div><!--fim do header social-->
 		 
@@ -39,21 +48,28 @@
      
 	 <div id="logo">
 	    
-		logo
+		<a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/logo.png" rel="" title=""/></a>
 	 
 	 </div><!--fim logo-->
 	 
+	  <div id="search">
+	     
+		 <form action="" method="post">
+		     <input type="text" name="">
+			  <input type="submit" value="" class="btn-search" name="">
+		 </form>
+	 
+	 </div><!--fim search-->
+	 
 	 <div id="login">
 	  
-	    login
+	    <ul>
+		    <li class="logar"><a href="">Login</a></li>
+			<li class="registre"><a href="">Registre-se</a></li>
+		</ul>
 	 
 	 </div><!--fim login-->
 	 
-	 <div id="search">
-	     
-		 Barra de Busca
-	 
-	 </div><!--fim search-->
 
 </div><!--fim do header contente-->
 
