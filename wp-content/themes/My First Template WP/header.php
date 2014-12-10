@@ -77,7 +77,32 @@
      
 	 <div id="nav-content">
 	     
-		 Barra de navegação
+		 <ul>
+		     <li><a href="#">Noticias</a></li>
+			 <li><a href="#">Esportes</a>
+			     <ul>
+				     <li><a href="#">Futebol</a></li>
+					 <li><a href="#">Natação</a></li>
+					 <li><a href="#">Basquete</a></li>
+					 <li><a href="#">Voleibol</a></li>
+					 <li><a href="#">Tenis</a></li>
+					 <li><a href="#">Ginastica</a></li>
+					 <li><a href="#">Atletismo</a></li>
+				 </ul>
+			 </li>
+			 <li><a href="#">Tecnologia</a></li>
+			 <li><a href="#">Entretenimento</a></li>
+			 <li><a href="#">Multimidias</a>
+			     <ul>
+				     <li><a href="#">Musicas</a></li>
+					 <li><a href="#">Videos</a></li>
+					 <li><a href="#">Fotos</a></li>
+				 </ul>
+			 </li>
+			 <li><a href="#">Saúde</a></li>
+			 <li><a href="#">Politica</a></li>
+			 <li><a href="#">Games</a></li>
+		 </ul>
 	 
 	 </div><!--fim do nav-content-->
 

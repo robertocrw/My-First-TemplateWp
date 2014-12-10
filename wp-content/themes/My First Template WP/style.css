@@ -16,17 +16,17 @@ body {
 }
 /***Header***/
 #header {
-     width: 100px;
+     width: 1350px;
 	 background: #fff;
 }
 #header-superior {
-     width: 100px;
-	 background: #f8f8f8;
-	 border-bottom: 1px;
-	 solid: #e1e1e1;
+     width: 1350px;
+	 background: #fff;
+	 border-bottom: 1px solid #e1e1e1;
+	 
 }
 #header-superior-content {
-     width: 1000px;
+     width: 1300px;
 	 margin: 0 auto; 
 	 overflow: hidden;
 }
@@ -46,8 +46,7 @@ body {
 	 text-decoration: none;
 	 padding: 20px 10px;
 	 display: block;
-	 border-right: 1px;
-	 solid: #e1e1e1;
+	 border-right: 1px solid #e1e1e1;
 }
 #header-paginas ul li a:hover {
      color: #ed5353;
@@ -62,7 +61,7 @@ body {
 	 float: left;
 }
 #header-content {
-     width: 1000px;
+     width: 1350px;
 	 margin: 0 auto;
 	 overflow: hidden;
 }
@@ -112,4 +111,62 @@ body {
 	 width: 38px;
 	 height: 44px;
 	 cursor: pointer;
+}
+/***Menu de Navegação***/
+#nav {
+     width: 1355px;
+	 float: left;
+	 background: #222;
+	 border-top: 3px solid #ed5353;
+}
+#nav-content {
+     width: 1350px;
+	 margin: 0 auto;
+}
+#nav-content ul {
+     float: left;
+	 list-style: none;
+	 text-align: left;
+}
+#nav-content ul li {
+     float: left;
+	 position: relative;
+	 font: 14px arial, verdana, tahoma;
+	 font-weight: bold;
+	 text-transform: uppercase;
+	 border-right: 1px solid #333;
+}
+#nav-content ul li  a {
+     display: block;
+	 padding: 20px;
+	 text-decoration: none;
+	 color: #fff;
+}
+#nav-content ul li:hover {
+     background: #ed5353
+}
+#nav-content ul li:hover ul {
+     display: block;
+}
+#nav-content ul li ul {
+     width: 220px;
+	 display: none;
+	 background: #f8f8f8;
+	 position: absolute;
+	 border-left: 5px solid #ed5353;
+}
+#nav-content ul li ul li {
+     border-right: none;
+	 width: 220px;
+	 text-transform: lowercase;
+	 font: 14px arial;
+}
+#nav-content ul li ul li a {
+     padding: 10px 12px;
+	 color: #666;
+	 border-bottom:  1px solid #e1e1e1;
+}
+#nav-content ul li ul li a:hover {
+     background: #eee;
+	 color: #ed5353;
 }
