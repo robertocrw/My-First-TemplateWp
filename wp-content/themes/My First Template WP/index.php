@@ -98,7 +98,47 @@
 		 </div><!--fim do tecnologia-->	
          <div id="entretenimento">		 
 		     
-			 entretenimento
+			 <div id="title-entretenimento"><span>ENTRETENIMENTO</span></div>
+			 
+			     <div class="post-entretenimento">
+				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post3.jpg" rel="" title="" /></a>
+					     <h1><a href="#">Justin Timberlake engrassa lista de atrações</a></h1>
+						 
+						 <div class="info-entretenimento">
+						     <ul>
+							     <li class="autor-entretenimento">autor</li>
+								 <li class="coment-entretenimento">coment</li>
+							 </ul>
+						 </div> <!--fim do info-entretenimeto-->
+						 <p>Justin Timberlake será umas das grandes atrações do Rock In Rio. De acordo com a organização do festival, o cantor...</p>
+					 
+				 </div> <!--fim do post entretenimento-->
+				 <div class="post-entretenimento">
+				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post3.jpg" rel="" title="" /></a>
+					     <h1><a href="#">Justin Timberlake engrassa lista de atrações</a></h1>
+						 
+						 <div class="info-entretenimento">
+						     <ul>
+							     <li class="autor-entretenimento">autor</li>
+								 <li class="coment-entretenimento">coment</li>
+							 </ul>
+						 </div> <!--fim do info-entretenimeto-->
+						 <p>Justin Timberlake será umas das grandes atrações do Rock In Rio. De acordo com a organização do festival, o cantor...</p>
+					 
+				 </div> <!--fim do post entretenimento-->
+				 <div class="post-entretenimento">
+				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post3.jpg" rel="" title="" /></a>
+					     <h1><a href="#">Justin Timberlake engrassa lista de atrações</a></h1>
+						 
+						 <div class="info-entretenimento">
+						     <ul>
+							     <li class="autor-entretenimento">autor</li>
+								 <li class="coment-entretenimento">coment</li>
+							 </ul>
+						 </div> <!--fim do info-entretenimeto-->
+						 <p>Justin Timberlake será umas das grandes atrações do Rock In Rio. De acordo com a organização do festival, o cantor...</p>
+					 
+				 </div> <!--fim do post entretenimento-->
 			 
 		 </div><!--fim do entretenimento-->
 		 

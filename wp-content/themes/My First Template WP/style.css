@@ -336,6 +336,23 @@ body {
 	 float: left;
 	 width: 450px;
 }
+/***Entretenimeto***/
+
+#entretenimento { width: 100%; float: left; margin-top: 26px;}
+#entretenimento #title-entretenimento { border-bottom: 2px solid #efeeee; padding: 5px 0;}
+#entretenimento #title-entretenimento span {font: 22px arial; font-weight: bold; padding: 5px 0; border-bottom: 2px solid #ed5353;}
+#entretenimento .post-entretenimento {width: 215px; float: left; padding: 20px 7.5px;}
+#entretenimento .post-entretenimento img { width: 215px; height: 160px;}
+#entretenimento .post-entretenimento h1 {font: 16px arial; font-weight: bold; margin: 5px 0;}
+#entretenimento .post-entretenimento h1 a {text-decoration: none; color: #444;}
+#entretenimento .post-entretenimento h1 a:hover {text-decoration: underline; color: #ed5353;}
+#entretenimento .info-entretenimento {width: 210px; margin: 6px 0; float: left;}
+#entretenimento .info-entretenimento ul {margin: 0; padding: 0; list-style: none;}
+#entretenimento .info-entretenimento ul li { width: 60px; float: left; color: #777;  padding: 4px 20px;}
+#entretenimento .info-entretenimento ul .autor-entretenimento { background: url(imagens/autor.png) no-repeat center left;}
+#entretenimento .info-entretenimento ul .coment-entretenimento { background: url(imagens/coment.png) no-repeat center left;}
+#entretenimento .post-entretenimento  p { font: 14px arial; color: #888;}
+
 /***Sidebar***/
 #sidebar {
      width: 280px;
