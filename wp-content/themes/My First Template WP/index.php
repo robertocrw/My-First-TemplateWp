@@ -64,14 +64,42 @@
 		 
 		 <div id="tecnologia">
 		     
-			 tecnologia
 		 
-		 </div><!--fim do tecnologia-->
+		     <div id="title-tec"><span>TECNOLOGIA</span></div>
+		     
+			     <div class="post-tec">
+			         <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post.jpg" rel="" title="" /></a>
+				         <h1><a href="#">Google pode estar preparando versão do Now para Mac OS X</a></h1>
+					 
+					     <div class="tec-info">
+					         <ul>
+						         <li class="tec-autor">autor</li>
+							     <li class="tec-views">views</li>
+							     <li class="tec-coment">coment</li>
+						     </ul>
+					     </div><!--fim do tec-info-->
+					     <p>O google now, extensão da ferramenta de buscas da empresa, pode estar chegando aos François...</p>
+			     </div><!--fim do post tec-->
+				 
+				 <div class="post-tec">
+			         <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post.jpg" rel="" title="" /></a>
+				         <h1><a href="#">Google pode estar preparando versão do Now para Mac OS X</a></h1>
+					 
+					     <div class="tec-info">
+					         <ul>
+						         <li class="tec-autor">autor</li>
+							     <li class="tec-views">views</li>
+							     <li class="tec-coment">coment</li>
+						     </ul>
+					     </div><!--fim do tec-info-->
+					     <p>O google now, extensão da ferramenta de buscas da empresa, pode estar chegando aos François...</p>
+			     </div><!--fim do post tec-->
 		 
-		 <div id="entretenimento">
+		 </div><!--fim do tecnologia-->	
+         <div id="entretenimento">		 
 		     
 			 entretenimento
-		 
+			 
 		 </div><!--fim do entretenimento-->
 		 
 		 <div id="esporte">

@@ -266,7 +266,76 @@ body {
      color: #ed5353;
 	 text-decoration: underline;
 }
+/***Tecnologia***/
 
+#tecnologia {
+     width: 100%;
+	 float: left;
+	 margin-top: 28px;
+}
+#tecnologia #title-tec {
+     border-bottom: 2px solid #efeeee;
+	 padding: 5px 0;
+}
+#tecnologia #title-tec span {
+     font: 22px arial;
+	 font-weight: bold;
+	 color: #292929;
+	 border-bottom: 2px solid #ed5353;
+}
+#tecnologia  .post-tec {
+     width: 100%;
+	 float: left;
+	 padding: 20px 0;
+	 border-bottom: 1px solid #efeeee;
+}
+#tecnologia  .post-tec img{
+     width: 200px;
+	 height: 120px;
+	 float: left;
+	 margin-right: 12px;
+}
+#tecnologia  .post-tec h1{
+     font: 22px arial;
+}
+#tecnologia  .post-tec h1 a{
+     color: #555;
+	 text-decoration: none;
+}
+#tecnologia  .post-tec h1 a:hover {
+     color: #ed5353;
+	 text-decoration: underline;
+}
+#tecnologia  .tec-info {
+     width: 400px;
+	 margin: 4px 0;
+	 float: left;
+}
+#tecnologia  .tec-info ul{
+     margin: 0;
+	 padding: 0;
+	 list-style: none;
+}
+#tecnologia  .tec-info ul li {
+     width: 60px;
+	 color: #777;
+	 float: left;
+	 padding: 4px 20px;
+}
+#tecnologia  .tec-info ul .tec-autor {
+     background: url(imagens/autor.png) no-repeat center left;
+}
+#tecnologia  .tec-info ul .tec-views {
+     background: url(imagens/views.png) no-repeat center left;
+}
+#tecnologia  .tec-info ul .tec-coment {
+     background: url(imagens/coment.png) no-repeat center left;
+}
+#tecnologia .post-tec p {
+     color: #888;
+	 float: left;
+	 width: 450px;
+}
 /***Sidebar***/
 #sidebar {
      width: 280px;
