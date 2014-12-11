@@ -142,29 +142,111 @@
 			 
 		 </div><!--fim do entretenimento-->
 		 
-		 <div id="esporte">
+		 <div id="bloco-esporte-saude">
+		 
+		     <div id="esporte">
 		     
-			 esporte
+			     <div id="title-esporte"><span>ESPORTES</span></div>
+				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post4.jpg" rel="" title="" /></a>
+		                 <div class="esporte-info">
+						     <ul>
+							     <li class="esporte-autor">autor</li>
+								 <li class="esporte-views">views</li>
+								 <li class="esporte-coment">coment</li>
+							 </ul>
+						 </div><!--fim do esporte info-->
+						 <h1><a href="#">Deores no joelho? Não se desepere! Fortaleça a musculatura e descanse</a></h1>
+						 
+						 <div id="esporte-list">
+						     <ul>
+							     <li>
+								     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post2.jpg" rel="" title=""/></a>
+								     <h2><a href"#">Tecnologia faz atleta sem movimento das pernas completar prova de 10km - eu atleta</a></h2>
+								 </li>
+							 </ul>
+						 </div><!--fim do esport liste-->
+						 
+		     </div><!--fim do esporte-->
 		 
-		 </div><!--fim do esporte-->
-		 
-		 <div id="saude">
+		     <div id="saude">
 		    
-			 saude
+				     <div id="title-saude"><span>SAÚDE</span></div>
+				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post4.jpg" rel="" title="" /></a>
+		                 <div class="saude-info">
+						     <ul>
+							     <li class="saude-autor">autor</li>
+								 <li class="saude-views">views</li>
+								 <li class="saude-coment">coment</li>
+							 </ul>
+						 </div><!--fim do saude info-->
+						 <h1><a href="#">Deores no joelho? Não se desepere! Fortaleça a musculatura e descanse</a></h1>
+						 
+						 <div id="saude-list">
+						     <ul>
+							     <li>
+								     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post2.jpg" rel="" title=""/></a>
+								     <h2><a href"#">Tecnologia faz atleta sem movimento das pernas completar prova de 10km - eu atleta</a></h2>
+								 </li>
+							 </ul>
+						 </div><!--fim do saude liste-->
 		
- 		 </div><!--fim do saude-->
+ 		     </div><!--fim do saude-->
 		 
-		 <div id="politica">
+		 </div><!--fim bloco sport saude-->
+		 
+	     <div id="bloco-politica-games">
+		 
+		     <div id="politica">
 		     
-			 politica
+			    <div id="title-politica"><span>POLITICA</span></div>
+				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post4.jpg" rel="" title="" /></a>
+		                 <div class="politica-info">
+						     <ul>
+							     <li class="politica-autor">autor</li>
+								 <li class="politica-views">views</li>
+								 <li class="politica-coment">coment</li>
+							 </ul>
+						 </div><!--fim do politica info-->
+						 <h1><a href="#">Deores no joelho? Não se desepere! Fortaleça a musculatura e descanse</a></h1>
+						 
+						 <div id="politica-list">
+						     <ul>
+							     <li>
+								     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post2.jpg" rel="" title=""/></a>
+								     <h2><a href"#">Tecnologia faz atleta sem movimento das pernas completar prova de 10km - eu atleta</a></h2>
+								 </li>
+							 </ul>
+						 </div><!--fim do politica liste-->
 		 
-		 </div><!--fim do politica-->
+		     </div><!--fim do politica-->
 		 
-		 <div id="games">
+		     <div id="games">
 		     
-			 games
+				<div id="title-games"><span>GAMES</span></div>
+				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post4.jpg" rel="" title="" /></a>
+		                 <div class="games-info">
+						     <ul>
+							     <li class="games-autor">autor</li>
+								 <li class="games-views">views</li>
+								 <li class="games-coment">coment</li>
+							 </ul>
+						 </div><!--fim do games info-->
+						 <h1><a href="#">Deores no joelho? Não se desepere! Fortaleça a musculatura e descanse</a></h1>
+						 
+						 <div id="games-list">
+						     <ul>
+							     <li>
+								     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post2.jpg" rel="" title=""/></a>
+								     <h2><a href"#">Tecnologia faz atleta sem movimento das pernas completar prova de 10km - eu atleta</a></h2>
+								 </li>
+							 </ul>
+						 </div><!--fim do games liste-->
 		 
-		 </div><!--fim do games-->
+		     </div><!--fim do games-->
+		 
+		 </div><!--fim do bloco politica games-->
+		 
+		 
 	 
 	 </div><!--fim do content-->
 
