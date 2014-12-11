@@ -170,3 +170,107 @@ body {
      background: #eee;
 	 color: #ed5353;
 }
+/*** Container ***/
+#container {
+     width: 1000px;
+	 margin: 0 auto;
+	 text-align: left;
+	 overflow: hidden;
+}
+#content {
+     width: 690px;
+	 float: left;
+	 overflow: hidden;
+	 
+}
+/***Destaque***/
+#destaque {
+     width: 100%;
+	 float: left;
+	 margin-top: 30px;
+	 border-bottom: 1px solid #efeeee;
+}
+#destaque .destaque-post {
+     width: 330px;
+	 float: left;
+}
+#destaque .right {
+     float: right;
+}
+#destaque .destaque-post img {
+     width: 330px;
+     height: 190px;
+}
+#destaque .destaque-post h1 {
+     font: 18px arial;
+	 font-weight: bold;
+}
+#destaque .destaque-post h1 a {
+     color: #444;
+	 text-decoration: none;
+}
+#destaque .destaque-post h1 a:hover {
+     color: #ed5353;
+	 text-decoration: underline;
+}
+#destaque .destaque-info {
+     width: 100%;
+	 float: left;
+}
+#destaque .destaque-info ul {
+     margin: 0;
+	 padding: 0;
+	 list-style: none;
+}
+#destaque .destaque-info ul li {
+     width: 60px;
+	 color: #777;
+	 float: left;
+	 padding: 4px 20px;
+}
+#destaque .destaque-info ul .dest-autor {
+     background:url(imagens/autor.png) no-repeat left center;
+}
+#destaque .destaque-info ul .dest-views {
+     background:url(imagens/views.png) no-repeat left center;
+}
+#destaque .destaque-info ul .dest-coment {
+     background:url(imagens/coment.png) no-repeat left center;
+}
+#destaque .list-dest {
+     width: 100%;
+	 float: left;
+	 margin-top: 20px;
+}
+#destaque .list-dest li {
+     list-style: none;
+	 float: left;
+	 padding: 14px 0;
+	 border-top: 1px solid #efeeee;
+	 
+}
+#destaque .list-dest img {
+     width: 96px;
+	 height: 70px;
+	 float: left;
+	 margin-right: 8px;
+}
+#destaque .list-dest h2 {
+     font: 14px arial;
+}
+#destaque .list-dest h2 a {
+     color: #444;
+	 text-decoration: none;
+}
+#destaque .list-dest h2 a:hover {
+     color: #ed5353;
+	 text-decoration: underline;
+}
+
+/***Sidebar***/
+#sidebar {
+     width: 280px;
+	 float: right;
+	 overflow: hidden;
+	 background: #222;
+}
