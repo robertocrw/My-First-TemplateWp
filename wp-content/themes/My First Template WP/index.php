@@ -7,57 +7,112 @@
 		 <div id="destaque">
 		    
 			<div class="destaque-post">
-			     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post.jpg" rel="" title="" /></a>
+			     <!--Dicionario-->
+				 <!--category_name=destaques&offset=0&showposts=1-->
+				 <!--category-name= esta dizendo que todos os posts que estiver nesta categoria vai estar nesta area, neste caso a categoria é destaques-->
+				 <!--&offset= vai organizar as postagens e mostrar nesta area sempre que houver atualização--> 
+				 <!--&showposts= Vai mostrar apenas uma postagem nesta area-->
+			     
+				 <!--abrir o l post sempre acima do loop--><!--ATENÇÂO para o lado do usuario. video 16-->
+				 <?php query_posts('category_name=destaques&offset=0&showposts=1'); ?>
+			     <!--loop que vai fazer com que as postagens criada pelo usuario seje mostrada-->
+				 <?php if (have_posts()) : while(have_posts()): the_post(); ?>
+				 
+				 <!--the_Permalink();  vai fazer com que crie um link para ver o post-->
+				 <a href="<?php the_Permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/imagens/post.jpg" rel="" title="" /></a>
 				 <div class="destaque-info">
-				     <ul>
-					     <li class="dest-autor">autor</li>
-						 <li class="dest-views">views</li>
-						 <li class="dest-coment">coment</li>
+				     <ul><!--the_autor(); vai exibir o autor do post-->
+					     <li class="dest-autor"><?php the_author(); ?></li>
+						 <!--este comando esta dependendo do plugin WP-PostViews que esta instalado, se possivel criar o meu proprio-->
+						 <li class="dest-views"><?php if(function_exists('the_views')); {the_views();}; ?></li>
+						 <!--comments_number vai fazer com que os comentarios seje contados e visualizados no contador-->
+						 <li class="dest-coment"><?php comments_number('0','1','%'); ?></li>
 					 </ul>
 			     </div><!--fim destaque info-->
+				 <!-- the_title(); vai fazer com que o titulo que o usuario criaou seja mostrado-->
+				 <h1><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h1>
+				 <!--fexamento do loop-->
 				 
-				 <h1><a href="#">Windows 8.1 pode ter volta do botão inicial</a></h1>
+				 <?php endwhile; else: ?>
+				 <?php endif; ?>
+				 
 				 
 				 <div class="list-dest">
 				     <ul>
-					     <li>
-						     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post2.jpg" rel="" title=""/></a>
-							 <h2><a href="#">Windows 8.1 pode ter volta do botão inicial</a></h2>
+					 
+				 <!--abrir o l post sempre acima do loop--><!--ATENÇÂO para o lado do usuario. video 16-->
+				 <?php query_posts('category_name=destaques&offset=2&showposts=2'); ?>
+				 <!--loop que vai fazer com que as postagens criada pelo usuario seje mostrada-->
+				 <?php if (have_posts()) : while(have_posts()): the_post(); ?>
+					 
+					 
+					     <li><!--ATENÇÂO para exibir as imagens que o usuari subiu para o post eu devo inserir o ?php the_post_thumbnails();?> no lugar de toda a tag img-->
+						     <a href="<?php the_Permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/imagens/post.jpg" rel="" title="" /></a>
+							 <h2><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h2>
 						 </li>
-						  <li>
-						     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post2.jpg" rel="" title=""/></a>
-							 <h2><a href="#">Windows 8.1 pode ter volta do botão inicial</a></h2>
-						 </li>
+						 
+				 <?php endwhile; else: ?>
+				 <?php endif; ?>
+						 
+						 
+
 					 </ul>
 			     </div><!--fim list dest-->
 				 
 			</div><!--fim destaque post-->
+			
+			
 			<div class="destaque-post right ">
-			     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post.jpg" rel="" title="" /></a>
+			     
+				 <!--abrir o l post sempre acima do loop--><!--ATENÇÂO para o lado do usuario. video 16-->
+				 <?php query_posts('category_name=destaques&offset=1&showposts=1'); ?>
+			     <!--loop que vai fazer com que as postagens criada pelo usuario seje mostrada-->
+				 <?php if (have_posts()) : while(have_posts()): the_post(); ?>
+				 
+				 
+				 <!--the_Permalink();  vai fazer com que crie um link para ver o post-->
+				 <a href="<?php the_Permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/imagens/post2.jpg" rel="" title=""/></a>
 				 <div class="destaque-info">
-				     <ul>
-					     <li class="dest-autor">autor</li>
-						 <li class="dest-views">views</li>
-						 <li class="dest-coment">coment</li>
+				     <ul><!--the_autor(); vai exibir o autor do post-->
+					     <li class="dest-autor"><?php the_author(); ?></li>
+						 <!--este comando esta dependendo do plugin WP-PostViews que esta instalado, se possivel criar o meu proprio-->
+						 <li class="dest-views"><?php if(function_exists('the_views')); {the_views();}; ?></li>
+						 <!--comments_number vai fazer com que os comentarios seje contados e visualizados no contador-->
+						 <li class="dest-coment"><?php comments_number('0','1','%'); ?></li>
 					 </ul>
 			     </div><!--fim destaque info-->
+				 <!-- the_title(); vai fazer com que o titulo que o usuario criaou seja mostrado-->
+				 <h1><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h1>
+				 <!--fexamento do loop-->
 				 
-				 <h1><a href="#">Windows 8.1 pode ter volta do botão inicial</a></h1>
+				 <?php endwhile; else: ?>
+				 <?php endif; ?>
+				 
+				 
 				 
 				 <div class="list-dest">
 				     <ul>
-					     <li>
-						     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post2.jpg" rel="" title=""/></a>
-							 <h2><a href="#">Windows 8.1 pode ter volta do botão inicial</a></h2>
+					 
+				 <!--abrir o l post sempre acima do loop--><!--ATENÇÂO para o lado do usuario. video 16-->
+				 <?php query_posts('category_name=destaques&offset=4&showposts=2'); ?>
+				 <!--loop que vai fazer com que as postagens criada pelo usuario seje mostrada-->
+				 <?php if (have_posts()) : while(have_posts()): the_post(); ?>
+					 
+					 
+					     <li><!--ATENÇÂO para exibir as imagens que o usuari subiu para o post eu devo inserir o ?php the_post_thumbnails();?> no lugar de toda a tag img-->
+						     <a href="<?php the_Permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/imagens/post.jpg" rel="" title="" /></a>
+							 <h2><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h2>
 						 </li>
-						  <li>
-						     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post2.jpg" rel="" title=""/></a>
-							 <h2><a href="#">Windows 8.1 pode ter volta do botão inicial</a></h2>
-						 </li>
+						 
+				 <?php endwhile; else: ?>
+				 <?php endif; ?>
+						 
+						 
+
 					 </ul>
-			     </div><!--fim list dest-->
+			     </div>
 				 
-			</div><!--fim destaque post-->
+			</div><!--fim destaque post right-->
 			
 		 
 		 </div><!--fim do destaque-->

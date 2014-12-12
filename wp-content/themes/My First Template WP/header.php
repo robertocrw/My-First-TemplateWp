@@ -82,14 +82,15 @@
 
 </div><!--fim do header contente-->
 
+<!--Categorias-->
 <div id="nav">
      
 	 <div id="nav-content">
 	     
 		 <ul> <!--O title_li=&hide_empty= é o camando que faz aparecer as categoria caso eu de o valor ZERO no final, caso seja um valor maior que ZERO ele ira exibir somente categorias com postagems com determinado valor-->
-             <?php wp_list_categories('title_li=&hide_empty=0&orderby&depth=2'); ?> 
+             <?php wp_list_categories('title_li=&hide_empty=0&orderby&depth=2&exclude=15'); ?> 
 		 </ul><!--O &orderby no final depois do valor de postagens vai fazer com que as categorias apareçam na ordem que o usuario ordenou
-	 
+	     <!--O &exclude= faz com que exclua determinada categoria, neste caso esta sendo usado para não danificar o a barra de menu-->
 	 </div><!--fim do nav-content-->
 
 </div><!--fim nav--> 

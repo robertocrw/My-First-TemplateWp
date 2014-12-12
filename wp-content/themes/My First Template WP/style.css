@@ -62,12 +62,12 @@ body { background: #fff; font: 14px arial, tahoma, verdana; text-align: center; 
 #destaque .destaque-post h1 a:hover { color: #ed5353; text-decoration: underline; }
 #destaque .destaque-info { width: 100%; float: left; }
 #destaque .destaque-info ul { margin: 0; padding: 0; list-style: none; }
-#destaque .destaque-info ul li { width: 60px; color: #777; float: left; padding: 4px 20px; }
-#destaque .destaque-info ul .dest-autor { background:url(imagens/autor.png) no-repeat left center; }
+#destaque .destaque-info ul li { width: 40px; color: #777; float: left; padding: 4px 25px; }
+#destaque .destaque-info ul .dest-autor { width: 100px; background:url(imagens/autor.png) no-repeat left center; }
 #destaque .destaque-info ul .dest-views { background:url(imagens/views.png) no-repeat left center; }
 #destaque .destaque-info ul .dest-coment { background:url(imagens/coment.png) no-repeat left center; }
 #destaque .list-dest { width: 100%; float: left; margin-top: 20px; }
-#destaque .list-dest li { list-style: none; float: left; padding: 14px 0; border-top: 1px solid #efeeee; }
+#destaque .list-dest li { width: 100%; list-style: none; float: left; padding: 14px 0; border-top: 1px solid #efeeee; }
 #destaque .list-dest img { width: 96px; height: 70px; float: left; margin-right: 8px; }
 #destaque .list-dest h2 { font: 14px arial; }
 #destaque .list-dest h2 a { color: #444; text-decoration: none; }
