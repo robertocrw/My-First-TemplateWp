@@ -13,6 +13,18 @@
 <?php wp_head();?>	 
 </head>
 <body>
+
+<!--Box Facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=535815079870722&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--Fim Box Fabeook-->
+
 <div id="header">
      
 	 <div id="header-superior">
@@ -55,7 +67,7 @@
 	  <div id="search">
 	     
 		 <form action="" method="post">
-		     <input type="text" name="">
+		     <input type="text" name="" placeholder="Digite sua pesquisa">
 			  <input type="submit" value="" class="btn-search" name="">
 		 </form>
 	 
