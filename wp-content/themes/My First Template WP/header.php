@@ -33,19 +33,16 @@
 		     
 			 <div id="header-paginas">
 			     
-				 <ul>
-				     <li><a href="#">Home</a></li>
-					 <li><a href="#">Arquivos</a></li>
-					 <li><a href="#">Sobre Nós</a></li>
-					 <li><a href="#">Serviços</a></li>
-					 <li><a href="#">Contatos</a></li>
-				 </ul>
+				 <ul><!--vai determinar que o HOME seja minha pagina principal-->
+				     <li><a href="<?php bloginfo('home'); ?>">Home</a></li>
+                     <?php wp_list_pages('title_li=');?>
+				 </ul><!--vai fazer com que as paginas criada pelo usuario apareça-->
 			 
 			 </div><!--fim do header pagina-->
 			 
 			 <div id="header-social">
 			     
-				 <a href=""><img src="<?php bloginfo('template_url'); ?>/imagens/icon-face.jpg" rel="" title="" /></a>
+				 <a href="http://www.facebook.com/"><img src="<?php bloginfo('template_url'); ?>/imagens/icon-face.jpg" rel="" title="" /></a>
 				 <a href=""><img src="<?php bloginfo('template_url'); ?>/imagens/icon-google.jpg" rel="" title="" /></a>
 				 <a href=""><img src="<?php bloginfo('template_url'); ?>/imagens/icon-twist.jpg" rel="" title="" /></a>
 				 <a href=""><img src="<?php bloginfo('template_url'); ?>/imagens/icon-youtube.jpg" rel="" title="" /></a>
@@ -59,8 +56,8 @@
 <div id="header-content">
      
 	 <div id="logo">
-	    
-		<a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/logo.png" rel="" title=""/></a>
+	    <!--vai fazer com que o meu logo seja um botão para a pagina home-->
+		<a href="<?php bloginfo('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/imagens/logo.png" rel="" title=""/></a>
 	 
 	 </div><!--fim logo-->
 	 
@@ -74,10 +71,10 @@
 	 </div><!--fim search-->
 	 
 	 <div id="login">
-	  
+	    <!--mudar para um comando como o bloginfo() que ainda não sei-->
 	    <ul>
-		    <li class="logar"><a href="">Login</a></li>
-			<li class="registre"><a href="">Registre-se</a></li>
+		    <li class="logar"><a href="http://127.0.0.1/projects/GitHub/php/Curso%20Wordpress/My-First-TemplateWp/wp-admin">Login</a></li>
+			<li class="registre"><a href="http://127.0.0.1/projects/GitHub/php/Curso%20Wordpress/My-First-TemplateWp/wp-login.php?action=registre">Registre-se</a></li>
 		</ul>
 	 
 	 </div><!--fim login-->
@@ -89,32 +86,9 @@
      
 	 <div id="nav-content">
 	     
-		 <ul>
-		     <li><a href="#">Noticias</a></li>
-			 <li><a href="#">Esportes</a>
-			     <ul>
-				     <li><a href="#">Futebol</a></li>
-					 <li><a href="#">Natação</a></li>
-					 <li><a href="#">Basquete</a></li>
-					 <li><a href="#">Voleibol</a></li>
-					 <li><a href="#">Tenis</a></li>
-					 <li><a href="#">Ginastica</a></li>
-					 <li><a href="#">Atletismo</a></li>
-				 </ul>
-			 </li>
-			 <li><a href="#">Tecnologia</a></li>
-			 <li><a href="#">Entretenimento</a></li>
-			 <li><a href="#">Multimidias</a>
-			     <ul>
-				     <li><a href="#">Musicas</a></li>
-					 <li><a href="#">Videos</a></li>
-					 <li><a href="#">Fotos</a></li>
-				 </ul>
-			 </li>
-			 <li><a href="#">Saúde</a></li>
-			 <li><a href="#">Politica</a></li>
-			 <li><a href="#">Games</a></li>
-		 </ul>
+		 <ul> <!--O title_li=&hide_empty= é o camando que faz aparecer as categoria caso eu de o valor ZERO no final, caso seja um valor maior que ZERO ele ira exibir somente categorias com postagems com determinado valor-->
+             <?php wp_list_categories('title_li=&hide_empty=0&orderby&depth=2'); ?> 
+		 </ul><!--O &orderby no final depois do valor de postagens vai fazer com que as categorias apareçam na ordem que o usuario ordenou
 	 
 	 </div><!--fim do nav-content-->
 
