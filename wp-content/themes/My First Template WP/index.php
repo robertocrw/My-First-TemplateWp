@@ -5,7 +5,11 @@
 	 <div id="content">
 	     
 		 <div id="destaque">
-		    
+
+		 
+<!--1 PRIMEIRA SEÇÂO DO HOME-->
+			
+			
 			<div class="destaque-post">
 			     <!--Dicionario-->
 				 <!--category_name=destaques&offset=0&showposts=1-->
@@ -13,6 +17,8 @@
 				 <!--&offset= vai organizar as postagens e mostrar nesta area sempre que houver atualização--> 
 				 <!--&showposts= Vai mostrar apenas uma postagem nesta area-->
 			     
+				 <!--category-name= não vai ajudar o usuario terei que procurar uma função que defina uma categoria pelo usuario e não pelo codigo-->
+				 
 				 <!--abrir o l post sempre acima do loop--><!--ATENÇÂO para o lado do usuario. video 16-->
 				 <?php query_posts('category_name=destaques&offset=0&showposts=1'); ?>
 			     <!--loop que vai fazer com que as postagens criada pelo usuario seje mostrada-->
@@ -116,88 +122,91 @@
 			
 		 
 		 </div><!--fim do destaque-->
+
+		 
+<!--1 FIM DA PRIMEIRA SEÇÃO DO HOME-->		 
+		 
 		 
 		 <div id="tecnologia">
 		     
-		 
-		     <div id="title-tec"><span>TECNOLOGIA</span></div>
+
+<!--2 SEGUNDA SEÇÃO DO HOME-->		 
 		     
-			     <div class="post-tec">
-			         <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post.jpg" rel="" title="" /></a>
-				         <h1><a href="#">Google pode estar preparando versão do Now para Mac OS X</a></h1>
-					 
-					     <div class="tec-info">
-					         <ul>
-						         <li class="tec-autor">autor</li>
-							     <li class="tec-views">views</li>
-							     <li class="tec-coment">coment</li>
-						     </ul>
-					     </div><!--fim do tec-info-->
-					     <p>O google now, extensão da ferramenta de buscas da empresa, pode estar chegando aos François...</p>
-			     </div><!--fim do post tec-->
+			 
+			 <div id="title-tec"><span>TECNOLOGIA</span></div>
+		     
+			     <!--abrir o l post sempre acima do loop--><!--ATENÇÂO para o lado do usuario. video 16-->
+				 <?php query_posts('category_name=tecnologia&offset=0&showposts=2'); ?>
+				 <!--loop que vai fazer com que as postagens criada pelo usuario seje mostrada-->
+				 <?php if (have_posts()) : while(have_posts()): the_post(); ?>
 				 
 				 <div class="post-tec">
-			         <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post.jpg" rel="" title="" /></a>
-				         <h1><a href="#">Google pode estar preparando versão do Now para Mac OS X</a></h1>
+			         <a href="<?php the_Permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/imagens/post.jpg" rel="" title="" /></a>
+				         <h1><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h1>
 					 
 					     <div class="tec-info">
 					         <ul>
-						         <li class="tec-autor">autor</li>
-							     <li class="tec-views">views</li>
-							     <li class="tec-coment">coment</li>
+						         <li class="tec-autor"><?php the_author(); ?></li>
+							     <li class="tec-views"><?php if(function_exists('the_views')); {the_views();}; ?></li>
+							     <li class="tec-coment"><?php comments_number('0', '1', '%'); ?></li>
 						     </ul>
 					     </div><!--fim do tec-info-->
-					     <p>O google now, extensão da ferramenta de buscas da empresa, pode estar chegando aos François...</p>
+						 
+						 <!--este comando esta dependendo do plugin (The Excerpt re-reloaded) para visualizar paragrafo -->
+					     <p><?php the_excerpt_rereloaded(30,'Ler Mais'); ?></p>
 			     </div><!--fim do post tec-->
+				 
+				 <?php endwhile; else: ?>
+				 <?php endif; ?>
+				 
 		 
 		 </div><!--fim do tecnologia-->	
-         <div id="entretenimento">		 
+         
+
+<!--2 FIM DA SEGUNDA SEÇÃO DO HOME-->		 
+		 
+		 
+		 <div id="entretenimento">		 
 		     
+<!--3 TERCEIRA SEÇÃO DO HOME-->			 
+			 
+			 
 			 <div id="title-entretenimento"><span>ENTRETENIMENTO</span></div>
 			 
-			     <div class="post-entretenimento">
-				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post3.jpg" rel="" title="" /></a>
-					     <h1><a href="#">Justin Timberlake engrassa lista de atrações</a></h1>
-						 
-						 <div class="info-entretenimento">
-						     <ul>
-							     <li class="autor-entretenimento">autor</li>
-								 <li class="coment-entretenimento">coment</li>
-							 </ul>
-						 </div> <!--fim do info-entretenimeto-->
-						 <p>Justin Timberlake será umas das grandes atrações do Rock In Rio. De acordo com a organização do festival, o cantor...</p>
-					 
-				 </div> <!--fim do post entretenimento-->
+			    <!--abrir o l post sempre acima do loop--><!--ATENÇÂO para o lado do usuario. video 16-->
+				 <?php query_posts('category_name=entretenimento&offset=0&showposts=3'); ?>
+				 <!--loop que vai fazer com que as postagens criada pelo usuario seje mostrada-->
+				 <?php if (have_posts()) : while(have_posts()): the_post(); ?>
+				 
 				 <div class="post-entretenimento">
-				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post3.jpg" rel="" title="" /></a>
-					     <h1><a href="#">Justin Timberlake engrassa lista de atrações</a></h1>
+				     <a href="<?php the_Permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/imagens/post3.jpg" rel="" title="" /></a>
+					     <h1><a href="<?php the_Permalink();  ?>"><?php the_title(); ?></a></h1>
 						 
 						 <div class="info-entretenimento">
 						     <ul>
-							     <li class="autor-entretenimento">autor</li>
-								 <li class="coment-entretenimento">coment</li>
+							     <li class="autor-entretenimento"><?php the_author(); ?></li>
+								 <li class="coment-entretenimento"><?php comments_number('0','1','%'); ?></li>
 							 </ul>
 						 </div> <!--fim do info-entretenimeto-->
-						 <p>Justin Timberlake será umas das grandes atrações do Rock In Rio. De acordo com a organização do festival, o cantor...</p>
-					 
-				 </div> <!--fim do post entretenimento-->
-				 <div class="post-entretenimento">
-				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post3.jpg" rel="" title="" /></a>
-					     <h1><a href="#">Justin Timberlake engrassa lista de atrações</a></h1>
-						 
-						 <div class="info-entretenimento">
-						     <ul>
-							     <li class="autor-entretenimento">autor</li>
-								 <li class="coment-entretenimento">coment</li>
-							 </ul>
-						 </div> <!--fim do info-entretenimeto-->
-						 <p>Justin Timberlake será umas das grandes atrações do Rock In Rio. De acordo com a organização do festival, o cantor...</p>
-					 
-				 </div> <!--fim do post entretenimento-->
+						 <p><?php the_excerpt_rereloaded(30,'Leia Mais'); ?></p>
+				         <!--se quizer pode ficar em brano no valor rereloaded '' -->
+				</div><!--fim do post entretenimento-->
+				
+				<?php endwhile; else: ?>
+				 <?php endif; ?>
+
 			 
 		 </div><!--fim do entretenimento-->
+
+
+<!--3 FIM DA TERCEIRA SEÇÃO DO HOME-->
+
+
 		 
 		 <div id="bloco-esporte-saude">
+
+<!--4 QUARTA SEÇÃO DO HOME-->
+
 		 
 		     <div id="esporte">
 		     
@@ -222,9 +231,15 @@
 						 </div><!--fim do esport liste-->
 						 
 		     </div><!--fim do esporte-->
-		 
+
+<!--4 FIM DA QUARTA SEÇÃO DO HOME-->
+
+			 
 		     <div id="saude">
-		    
+
+
+<!--5 QUINTA SEÇÃO DO HOME-->			 
+			 
 				     <div id="title-saude"><span>SAÚDE</span></div>
 				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post4.jpg" rel="" title="" /></a>
 		                 <div class="saude-info">
@@ -248,8 +263,14 @@
  		     </div><!--fim do saude-->
 		 
 		 </div><!--fim bloco sport saude-->
+
+
+<!--5 FIM DA QUINTA SEÇÃO DO HOME-->
+
 		 
 	     <div id="bloco-politica-games">
+
+<!--6 SEXTA SEÇÃO DO HOME-->
 		 
 		     <div id="politica">
 		     
@@ -274,8 +295,16 @@
 						 </div><!--fim do politica liste-->
 		 
 		     </div><!--fim do politica-->
-		 
+
+
+<!--6 FIM DA SEXTA SEÇÃO DO HOME-->
+
+			 
 		     <div id="games">
+
+
+<!--7 SETIMA SEÇÃO DO HOME-->			 
+			 
 		     
 				<div id="title-games"><span>GAMES</span></div>
 				     <a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/post4.jpg" rel="" title="" /></a>
@@ -298,7 +327,11 @@
 						 </div><!--fim do games liste-->
 		 
 		     </div><!--fim do games-->
-		 
+
+
+<!--7 FIM DA SETIMA SEÇÃO DO HOME-->
+			 
+			 
 		 </div><!--fim do bloco politica games-->
 		 
 		 
