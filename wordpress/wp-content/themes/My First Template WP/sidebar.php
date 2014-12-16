@@ -19,58 +19,27 @@
 	     <div id="title-colunistas"><span>COLUNISTAS</span></div>
 		 <div class="colunistas">
 		     <ul>
+			     <!--ATENÇÃO NÃO PRATICO. ID-USER vai trabalhar com o id do usuario-->
+			     <?php $author='1'; ?>
+			     
+			 
 			     <li>
-				     <img src="<?php bloginfo('template_url'); ?>/imagens/colunistas.jpg" alt="" title=""/>
-					 <h1><a href="#">Roberto Pinto</a></h1>
+				     <!--vai pegar o avatar do author o 70 representa 70 px de tamanho do avatar-->
+				     <?php echo (get_avatar($author, 70)); ?>
+				      <!--Este codigo faz com que o nome seja a url do autor e faz aparecer o primerio e ultimo nome do autor-->
+				     <h1><a href="<php bloginfo('url'); ?>/?author=<?php echo $author; ?>"><?php $user_info = get_userdata($author); echo ($user_info->first_name ."". $user_info->last_name . "\n"); ?></a></h1>
 					 
 					 <div class="info-colunistas">
-						 <ul>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/facebook.png" alt="" title=""/></a></li>
+						 <ul> <!--ATENÇÂO NAO PRATICO. adicionado o url facebook e target name para abrir em outra pagina-->
+							 <li><a href="http://www.facebook.com/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/imagens/facebook.png" alt="" title=""/></a></li>
 							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/google+.png" alt="" title=""/></a></li>
 							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/twitter.png" alt="" title=""/></a></li>
 							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/youtube.png" alt="" title=""/></a></li>
 						 </ul>
 					 </div><!--fim do info colunistas-->
 				 </li>
-				 <li>
-				     <img src="<?php bloginfo('template_url'); ?>/imagens/colunistas.jpg" alt="" title=""/>
-					 <h1><a href="#">Roberto Pinto</a></h1>
-					 
-					 <div class="info-colunistas">
-						 <ul>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/facebook.png" alt="" title=""/></a></li>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/google+.png" alt="" title=""/></a></li>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/twitter.png" alt="" title=""/></a></li>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/youtube.png" alt="" title=""/></a></li>
-						 </ul>
-					 </div><!--fim do info colunistas-->
-				 </li>
-				 <li>
-				     <img src="<?php bloginfo('template_url'); ?>/imagens/colunistas.jpg" alt="" title=""/>
-					 <h1><a href="#">Roberto Pinto</a></h1>
-					 
-					 <div class="info-colunistas">
-						 <ul>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/facebook.png" alt="" title=""/></a></li>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/google+.png" alt="" title=""/></a></li>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/twitter.png" alt="" title=""/></a></li>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/youtube.png" alt="" title=""/></a></li>
-						 </ul>
-					 </div><!--fim do info colunistas-->
-				 </li>
-				 <li>
-				     <img src="<?php bloginfo('template_url'); ?>/imagens/colunistas.jpg" alt="" title=""/>
-					 <h1><a href="#">Roberto Pinto</a></h1>
-					 
-					 <div class="info-colunistas">
-						 <ul>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/facebook.png" alt="" title=""/></a></li>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/google+.png" alt="" title=""/></a></li>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/twitter.png" alt="" title=""/></a></li>
-							 <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/imagens/youtube.png" alt="" title=""/></a></li>
-						 </ul>
-					 </div><!--fim do info colunistas-->
-				 </li>
+
+
 			 </ul>
 		 </div><!--fim do colunistas-->
 	 
