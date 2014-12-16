@@ -263,6 +263,30 @@ body { background: #fff; font: 14px arial, tahoma, verdana; text-align: center; 
 #sidebar-facebook #title-facebook span {font: 22px arial; font-weight: bold; color: #292929; padding: 5px 0; border-bottom: 2px solid #ed5353;}
 #sidebar-facebook #face-box { margin-top: 20px; }
 
+
+/****Paginas***/
+
+.main-page {margin-top: 30px;}
+.main-page  #title-page{ width: 100%; float: left; padding: 20px 0; border-bottom: 1px solid #efeeee; }
+.main-page #title-page span { text-transform: uppercase; font: 22px arial; font-weight: bold; color: #292929; border-bottom: 2px solid #ed5353; }
+.main-page p { margin-top: 15px; font: 13px arial; color: #666; }
+.main-page p a { color: #069; text-decoration: none;}
+.main-page p a:hover { text-decoration: underline;}
+.main-page strong { font-weight: bold; color: #444;}
+.main-page em { text-decoration: underline;}
+.main-page ul li { font: 13px arial; color: #666; margin: 10px 25px;}
+.main-page ol li { font: 13px arial; color: #666; margin: 10px 25px;}
+.main-page  h1,h2,h3,h4,h5,h6{ margin-top: 15px;}
+.main-page h1 { font: 22px arial; color: #ed5353; }
+.main-page h2 { font: 20px arial; color: #ed5353; }
+.main-page h3 { font: 18px arial; color: #ed5353; }
+.main-page h4 { font: 16px arial; color: #ed5353; }
+.main-page h5 { font: 14px arial; color: #ed5353; }
+.main-page h6 { font: 12px arial; color: #ed5353; }
+.main-page blockquote { background: #eee; padding: 10px; border-left: 2px solid #ed5353; margin-top: 15px;}
+
+.alingright { float: right;}
+
 /***Footer***/
 
 #footer { width: 100%; clear: both; background: #222; overflow: hidden; margin-top: 40px; text-align: left; }
