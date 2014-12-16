@@ -2,28 +2,16 @@
      
 	 <div id="sidebar-vistos">
 	     <div id="title-vistos"><span>POST MAIS VISTOS</span></div>
+		 
+		 <?php if(function_exists('get_most_viewed')): ?>
 		 <ul>
-		     <li>
-			     <span class="vistos-number">1</span>
-				 <a href="#">Google deve liberar nova interface do Maps em evento</a>
-			 </li>
+		     
 			 <li>
-			     <span class="vistos-number">2</span>
-				 <a href="#">Google deve liberar nova interface do Maps em evento</a>
-			 </li>
-			 <li>
-			     <span class="vistos-number">3</span>
-				 <a href="#">Google deve liberar nova interface do Maps em evento</a>
-			 </li>
-			 <li>
-			     <span class="vistos-number">4</span>
-				 <a href="#">Google deve liberar nova interface do Maps em evento</a>
-			 </li>
-			 <li>
-			     <span class="vistos-number">5</span>
-				 <a href="#">Google deve liberar nova interface do Maps em evento</a>
+			     <span class="vistos-number">5<?php get_most_viewed('post', 5); ?></span>
+				 
 			 </li>
 		 </ul>
+		 <?php endif; ?>
 	 
 	 </div><!--fim da sidebar vistos-->
 	 

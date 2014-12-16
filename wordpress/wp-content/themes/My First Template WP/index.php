@@ -16,11 +16,13 @@
 				 <!--category-name= esta dizendo que todos os posts que estiver nesta categoria vai estar nesta area, neste caso a categoria é destaques-->
 				 <!--&offset= vai organizar as postagens e mostrar nesta area sempre que houver atualização--> 
 				 <!--&showposts= Vai mostrar apenas uma postagem nesta area-->
+				 
+				 <!--O post_per_page ajuda muito o usuario pois ele não esta vinculado a nenhuma categoria, logo ele mosta os post mais recentes em uma determinada area-->
 			     
 				 <!--category-name= não vai ajudar o usuario terei que procurar uma função que defina uma categoria pelo usuario e não pelo codigo-->
 				 
 				 <!--abrir o l post sempre acima do loop--><!--ATENÇÂO para o lado do usuario. video 16-->
-				 <?php query_posts('category_name=destaques&offset=0&showposts=1'); ?>
+				 <?php query_posts('post_per_page=0&offset=0&showposts=1'); ?>
 			     <!--loop que vai fazer com que as postagens criada pelo usuario seje mostrada-->
 				 <?php if (have_posts()) : while(have_posts()): the_post(); ?>
 				 
@@ -47,7 +49,7 @@
 				     <ul>
 					 
 				 <!--abrir o l post sempre acima do loop--><!--ATENÇÂO para o lado do usuario. video 16-->
-				 <?php query_posts('category_name=destaques&offset=2&showposts=2'); ?>
+				 <?php query_posts('post_per_page=2&offset=2&showposts=2'); ?>
 				 <!--loop que vai fazer com que as postagens criada pelo usuario seje mostrada-->
 				 <?php if (have_posts()) : while(have_posts()): the_post(); ?>
 					 
@@ -71,7 +73,7 @@
 			<div class="destaque-post right ">
 			     
 				 <!--abrir o l post sempre acima do loop--><!--ATENÇÂO para o lado do usuario. video 16-->
-				 <?php query_posts('category_name=destaques&offset=1&showposts=1'); ?>
+				 <?php query_posts('post_per_page=0&offset=1&showposts=1'); ?>
 			     <!--loop que vai fazer com que as postagens criada pelo usuario seje mostrada-->
 				 <?php if (have_posts()) : while(have_posts()): the_post(); ?>
 				 
@@ -100,7 +102,7 @@
 				     <ul>
 					 
 				 <!--abrir o l post sempre acima do loop--><!--ATENÇÂO para o lado do usuario. video 16-->
-				 <?php query_posts('category_name=destaques&offset=4&showposts=2'); ?>
+				 <?php query_posts('post_per_page=2&offset=4&showposts=2'); ?>
 				 <!--loop que vai fazer com que as postagens criada pelo usuario seje mostrada-->
 				 <?php if (have_posts()) : while(have_posts()): the_post(); ?>
 					 
